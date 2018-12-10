@@ -7,6 +7,9 @@
 $desktop-nav-bg: #f7f7f7;
 $desktop-nav-color: #323A45;
 
+$sandbox-desktop-nav-bg: #323A45;
+$sandbox-desktop-nav-color: #ffffff;
+
 
 // Breakpoints
 // -----------
@@ -98,6 +101,42 @@ header {
       color: #fff;
       text-decoration: none;
     }
+  }
+
+}
+
+// Sandbox Color Overrides
+// -----------------------
+
+.sandbox-colors {
+  background: $sandbox-desktop-nav-bg !important;
+  a {
+    color: $sandbox-desktop-nav-color !important;
+  }
+  .mobile-nav-trigger-button {
+    background: darken($sandbox-desktop-nav-bg, 5%) !important;
+    color: $sandbox-desktop-nav-color !important;
+    &:visited {
+      color: $sandbox-desktop-nav-color !important;
+    }
+    &:active {
+      color: $sandbox-desktop-nav-color !important;
+    }
+  }
+}
+
+// Login Button (Sandbox)
+.login-button {
+  background: #0071BC !important;
+  &:hover {
+    background: darken(#0071BC, 10%) !important;
+  }
+}
+// Sign Up Button (Sandbox)
+.signup-button {
+  background: #2E8540 !important;
+  &:hover {
+    background: darken(#2E8540, 10%) !important;
   }
 }
 
