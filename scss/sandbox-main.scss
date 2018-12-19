@@ -11,11 +11,5 @@
 @import 'partials/sandbox/sandbox-login';
 @import 'partials/sandbox/sandbox-global';
 @import 'partials/sandbox/bene-auth-consent-view';
-
-* {
-  margin: 0;
-}
-
-main {
-  overflow: hidden !important;
-}
+@import 'partials/sandbox/forms';
+@import 'partials/sandbox/breadcrumbs';
