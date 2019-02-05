@@ -40,14 +40,14 @@ $banner-color-primary: #ffffff;
   }
   // Page Description
   .page-description {
-		color: $banner-color-primary;
-		font-size: 1.1rem;
+    color: $banner-color-primary;
+    font-size: 1.1rem;
     @media #{$phone} {
       font-size: 1rem;
     }
   }
   // Call to Action Buttons
-	.ctas {
+  .ctas {
     display: flex;
     // Display the buttons vertically on phones
     @media #{$phone} {
@@ -85,13 +85,13 @@ $banner-color-primary: #ffffff;
     }
     // Styles feather icon
 		svg {
-			fill: none;
-			margin-left: 1rem;
+      fill: none;
+      margin-left: 1rem;
       @media #{$small-phone} {
         display: none;
       }
-		}
-	}
+    }
+  }
   // Gradient Container
   .gradient {
     background: rgb(0,113,188);
