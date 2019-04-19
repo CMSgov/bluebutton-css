@@ -3,3 +3,41 @@
 
 // Static Site Imports
 @import 'partials/static/legacy';
+@import 'partials/static/blog';
+
+// Variables
+$blog-card-bg: #ffffff;
+$blog-card-title-font-family: 'Roboto', sans-serif;
+$blog-card-body-font-family: 'Open Sans', sans-serif;
+
+// Styles
+
+.ds-c-blog-card {
+	background: hotpink !important;
+}
+
+.ds-c-blog-card--featured {
+	background: $blog-card-bg;
+	border-radius: .3rem;
+	display: flex;
+	// Blog Card Image
+	.blog-card-image img {
+		max-width: 300px;
+		font-size: .8rem;
+	}
+	// Blog Card Content Container
+	.blog-card-content {
+		// Blog Card Date
+		.blog-card-content-date {
+			font-family: $blog-card-body-font-family;
+		}
+		// Blog Card Title
+		.blog-card-content-title {
+			font-family: $blog-card-title-font-family;
+		}
+		// Blog Card Description
+		.blog-card-content-description {
+			font-family: $blog-card-body-font-family;
+		}
+	}
+}
