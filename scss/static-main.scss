@@ -13,13 +13,22 @@ $blog-card-body-font-family: 'Open Sans', sans-serif;
 $black: #323a45;
 $white: #ffffff;
 
-// Styles
+// Styles for Blog Card Grid and Featured Blog Card
+
+.ds-c-blog-post-grid {
+	display: grid;
+   padding: 1rem;
+   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   grid-gap: 1rem;
+}
 
 .ds-c-blog-card {
 	background: $blog-card-bg;
 	border-radius: .3rem;
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column;
+	// flex: 0 1 32%;
+	display: grid;
 	// Blog Card Image
 	.blog-card-image {
 		height: 300px;
@@ -55,6 +64,7 @@ $white: #ffffff;
 			font-size: 1.5rem;
 			font-weight: bold;
 			margin-bottom: .5rem;
+			min-height: 3.5rem;
 		}
 		// Blog Card Description
 		.blog-card-content-description {
@@ -84,9 +94,11 @@ $white: #ffffff;
 }
 
 .ds-c-blog-card.featured {
+	max-width: 97%;
+	margin: 0 auto;
 	margin-bottom: 2rem;
+	display: flex;
 	flex-direction: row;
-	
 	// Small Screen Styles
 	@media #{$tablet, $phone} {
 		flex-direction: column;
