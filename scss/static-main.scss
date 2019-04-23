@@ -40,7 +40,7 @@ $white: #ffffff;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: 4rem;
+		height: 7rem;
 		// Blog Card Date
 		.blog-card-content-date {
 			font-family: $blog-card-body-font-family;
@@ -121,6 +121,7 @@ $white: #ffffff;
 	}
 	.blog-card-content {
 		flex-grow: 2;
+		height: auto;
 	}
 	// Blog Card "Read More" Button
 	.blog-card-content-button {
