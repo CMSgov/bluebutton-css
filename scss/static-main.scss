@@ -25,10 +25,8 @@ $white: #ffffff;
 .ds-c-blog-card {
 	background: $blog-card-bg;
 	border-radius: .3rem;
-	// display: flex;
-	// flex-direction: column;
-	// flex: 0 1 32%;
 	display: grid;
+	color: $black;
 	// Blog Card Image
 	.blog-card-image {
 		height: 300px;
@@ -42,6 +40,7 @@ $white: #ffffff;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		height: 4rem;
 		// Blog Card Date
 		.blog-card-content-date {
 			font-family: $blog-card-body-font-family;
@@ -64,7 +63,6 @@ $white: #ffffff;
 			font-size: 1.5rem;
 			font-weight: bold;
 			margin-bottom: .5rem;
-			min-height: 3.5rem;
 		}
 		// Blog Card Description
 		.blog-card-content-description {
