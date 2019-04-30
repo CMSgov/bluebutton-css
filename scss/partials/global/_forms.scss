@@ -26,13 +26,13 @@ form {
 	input[type="text"],
 	input[type="email"],
 	input[type="number"],
-  input[type="password"],
+	input[type="password"],
 	input[type="url"],
  	input[type="file"]	{
 		box-sizing: border-box;
 		margin: .5rem 0 1rem 0;
 		display: block;
-    width: 100%;
+		width: 100%;
 		background: $light-gray;
 		border: $component-border;
 		border-radius: .3rem;
@@ -70,7 +70,7 @@ form {
 		border-radius: .3rem;
 		cursor: pointer;
 	}
-	input[type="button"] {
+	input[type="button"], button {
 		// background: $blue;
 		// color: $white;
 		padding: 1rem;
@@ -127,19 +127,19 @@ select {
 	width: 100%;
 	padding: 1rem;
 	background-image:
-    linear-gradient(45deg, transparent 50%, gray 50%),
-    linear-gradient(135deg, gray 50%, transparent 50%),
-    linear-gradient(to right, #ccc, #ccc);
-  background-position:
-    calc(100% - 20px) calc(1.5rem + 2px),
-    calc(100% - 15px) calc(1.5rem + 2px),
-    calc(100% - 2.5rem) 0rem;
+		linear-gradient(45deg, transparent 50%, gray 50%),
+		linear-gradient(135deg, gray 50%, transparent 50%),
+		linear-gradient(to right, #ccc, #ccc);
+	 background-position:
+		calc(100% - 20px) calc(1.5rem + 2px),
+		calc(100% - 15px) calc(1.5rem + 2px),
+		calc(100% - 2.5rem) 0rem;
   background-size:
-    5px 5px,
-    5px 5px,
-    1px 3.5rem;
+		5px 5px,
+		5px 5px,
+		1px 3.5rem;
   background-repeat: no-repeat;
-	-webkit-appearance: none;
+		-webkit-appearance: none;
 }
 
 // Form Help Messages

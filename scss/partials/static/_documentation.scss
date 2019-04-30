@@ -94,3 +94,12 @@ $doc-side-nav-bg: $dark-gray;
 	box-shadow: 2px 2px 5px 1px grey;
 	border-radius: 5px;
 }
+
+.swagger-ui {
+	.auth-btn-wrapper {
+		justify-content: flex-start;
+	}
+	button {
+		margin-right: .5rem !important;
+	}
+}
