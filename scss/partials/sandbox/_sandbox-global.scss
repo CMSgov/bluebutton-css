@@ -43,12 +43,18 @@ $gradient-card-border-color: #DDDDDD;
 		margin-bottom: 2rem;
 	}
 	.gradient-messages-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		background: $black;
 		color: $white;
 		padding: 1rem 1.5rem;
 		margin-bottom: 2rem;
 		font-size: .8rem;
 		border-radius: .3rem;
+		svg {
+			margin-right: .5rem;
+		}
 	}
 	.gradient-content-card {
 		margin-bottom: 2rem;
