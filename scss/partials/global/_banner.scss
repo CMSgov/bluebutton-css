@@ -2,8 +2,16 @@
 // NOTE: Will need to make this as a mixing for use on sandbox.
 
 // Variables
+// ---------
+
+// Default Colors (For Static Site)
 $banner-bg-primary: #0071BC;
 $banner-color-primary: #ffffff;
+
+// Sandbox Color Variants
+$banner-sandbox-solid: #3D66AF;
+$banner-sandbox-gradient-solid: rgba(61, 102, 175, 50%);
+$banner-sandbox-gradient-accent: rgba(158,143,243, 100%);
 
 // Banner Styles
 .ds-c-banner {
@@ -19,7 +27,7 @@ $banner-color-primary: #ffffff;
     max-width: 60vw;
     // Adds left padding on large screens
     @media #{$large-desktop} {
-      padding-left: 20vw;
+      padding-left: 5%;
       max-width: 50vw;
     }
     // Fills the width of device on smaller screens
@@ -30,6 +38,10 @@ $banner-color-primary: #ffffff;
     @media #{$phone} {
       padding: 5rem 1rem;
     }
+  }
+  // Color override when banner is in use for the Sandbox
+  .sandbox-solid {
+    background: $banner-sandbox-solid;
   }
   // Bade Styles
   .ds-c-badge {
@@ -101,5 +113,10 @@ $banner-color-primary: #ffffff;
     @media #{$tablet, $phone} {
       display: none;
     }
+  }
+  // Color override when banner is in use for the Sandbox
+  .sandbox-gradient {
+    background: $banner-sandbox-solid;
+    background: linear-gradient(90deg, $banner-sandbox-gradient-solid, $banner-sandbox-gradient-accent);
   }
 }
