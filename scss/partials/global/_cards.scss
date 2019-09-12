@@ -1,8 +1,31 @@
+@import 'global-variables';
+
 // Cards
 // -----
 
 // Message Card
-.ds-c-message-card {
-	background: hotpink;
+// ------------
+// NOTE: Meant to over-ride .ds-c-alert
+// This card can be used to deliver short messages. Does not expand to fill container width.
+
+// Message Card Variables
+$bb-c-message-card-bg: #EDEDED;
+$bb-c-message-card-border-color: $blue;
+
+// Message Card Styles
+.bb-c-message-card {
+	background: $bb-c-message-card-bg;
+	border-left-color: $bb-c-message-card-border-color;
+	border-radius: .3rem;
 	padding: 1rem;
+	max-width: 500px;
+	padding: 2rem;
+	.ds-c-alert__body {
+		padding: 0;
+		.ds-c-alert__heading,
+		.ds-c-alert__text {
+			font-size: .9rem;
+			margin: .5rem 0;
+		}
+	}
 }

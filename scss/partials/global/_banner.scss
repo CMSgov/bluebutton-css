@@ -39,10 +39,6 @@ $banner-sandbox-gradient-accent: rgba(158,143,243, 100%);
       padding: 5rem 1rem;
     }
   }
-  // Color override when banner is in use for the Sandbox
-  .sandbox-solid {
-    background: $banner-sandbox-solid;
-  }
   // Bade Styles
   .ds-c-badge {
     background: $banner-color-primary;
@@ -54,6 +50,7 @@ $banner-sandbox-gradient-accent: rgba(158,143,243, 100%);
   .page-description {
     color: $banner-color-primary;
     font-size: 1.1rem;
+    font-family: 'Open Sans', 'Roboto', 'Helvetica', sans-serif;
     @media #{$phone} {
       font-size: 1rem;
     }
@@ -81,6 +78,7 @@ $banner-sandbox-gradient-accent: rgba(158,143,243, 100%);
       padding: 1rem;
       font-weight: bold;
       text-decoration: none;
+      outline-color: red;
       transition: background 180ms ease, color 180ms ease;
       @media #{$small-phone} {
         align-items: center;
@@ -91,7 +89,7 @@ $banner-sandbox-gradient-accent: rgba(158,143,243, 100%);
       }
     }
     // Button Hover Styles
-    .cta-button:hover {
+    .cta-button:hover, .cta-button:focus {
       background: $banner-color-primary;
       color: $banner-bg-primary;
     }
@@ -114,9 +112,23 @@ $banner-sandbox-gradient-accent: rgba(158,143,243, 100%);
       display: none;
     }
   }
+}
+
+// Sandbox Banner Overrides
+// ------------------------
+// Tweaks needed for Sandbox environment
+.ds-c-banner {
+  // Color override when banner is in use for the Sandbox
+  .sandbox-solid {
+    background: $banner-sandbox-solid;
+    h1, p, a {
+      margin: 1rem 0;
+    }
+  }
   // Color override when banner is in use for the Sandbox
   .sandbox-gradient {
     background: $banner-sandbox-solid;
     background: linear-gradient(90deg, $banner-sandbox-gradient-solid, $banner-sandbox-gradient-accent);
   }
 }
+
