@@ -3,6 +3,17 @@
 // Cards
 // -----
 
+// Default Card
+// ------------
+
+$bb-card-default-border: #e8e8e8;
+
+.bb-c-card {
+	background: $white;
+	border: 1px solid $bb-card-default-border;
+	border-radius: .3rem;
+}
+
 // Message Card
 // ------------
 // NOTE: Meant to over-ride .ds-c-alert
@@ -26,6 +37,138 @@ $bb-c-message-card-border-color: $blue;
 		.ds-c-alert__text {
 			font-size: .9rem;
 			margin: .5rem 0;
+		}
+	}
+}
+
+// Card Containers
+// ---------------
+// These classes can help define layouts for cards
+
+.bb-app-card-container-2-2 {
+	display: flex;
+	flex-wrap: wrap;
+	@media #{$large-desktop} {
+		.sandbox-app-card {
+			width: 45%;
+		}
+	}
+	@media #{$desktop} {
+		.sandbox-app-card {
+			width: 45%;
+		}
+	}
+	@media #{$tablet} {
+		.sandbox-app-card {
+			width: 100%;
+		}
+	}
+	@media #{$phone} {
+		.sandbox-app-card {
+			width: 100%;
+		}
+	}
+}
+
+// Sandbox Application Card
+// ------------------------
+
+.sandbox-app-card {
+	display: flex;
+	flex-direction: column;
+	color: $black;
+	max-width: 700px;
+	margin: .5rem;
+	.app-info {
+		display: flex;
+		padding: 1rem;
+		align-items: center;
+	}
+	.app-info .app-date-and-title {
+		flex-grow: 2;
+		.app-title {
+			color: $black;
+			font-weight: bold;
+			font-size: 1.3rem;
+			display: inline-block;
+			margin-bottom: .5rem;
+			text-decoration: none;
+			transition: color 90ms ease;
+		}
+		.app-title:hover,
+		.app-title:focus {
+			color: #000000;
+			text-decoration: underline;
+		} 
+		.app-last-updated {
+			font-size: .9rem;
+		}
+	}
+	@media #{$phone, $small-phone} {
+		.app-info .app-title {
+			font-size: 1rem !important;
+		}
+		.app-info .app-last-updated {
+			font-size: .8rem !important;
+		}
+	}
+	.app-info .app-logo {
+		height: 50px;
+		width: 50px;
+		min-width: 50px;
+		border: 2px solid darken($bb-card-default-border, 10%);
+		border-radius: 50%;
+		background-position: center;
+		background-size: contain;
+		margin-left: .5rem;
+	}
+	.app-credentials {
+		border-top: 1px solid $bb-card-default-border;
+		border-bottom: 1px solid $bb-card-default-border;
+		padding: 1rem;
+		.app-credentials-toggle {
+			font-size: .9rem;
+			display: block;
+			text-align: right;
+			cursor: pointer;
+		}
+		.app-credentials-toggle:hover {
+			text-decoration: underline;
+		}
+		.copy-confirmation {
+			background: $color-success;
+			color: $white;
+			padding: .5rem;
+			font-size: .7rem;
+			border-radius: .3rem;
+			margin-right: .5rem;
+			position: absolute;
+			margin-top: -.75rem;
+			display: none;
+		}
+	}
+	.app-actions {
+		padding: 1rem;
+		.view-edit-app-link {
+			font-weight: bold;
+			color: $black;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			text-decoration: none;
+			transition: color 90ms ease;
+		}
+		.view-edit-app-link svg {
+			margin-left: .5rem;
+		}
+		.view-edit-app-link:hover,
+		.view-edit-app-link:focus {
+			color: #000000;
+			text-decoration: underline;
+		}
+		.view-edit-app-link:hover svg,
+		.view-edit-app-link:focus svg {
+			stroke: #000000;
 		}
 	}
 }
