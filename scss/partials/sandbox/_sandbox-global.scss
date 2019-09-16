@@ -5,9 +5,41 @@
 // Import Global Variables
 @import '../global/global-variables';
 
+// General Global Styles
+// ---------------------
 
-// Gradient Container Layout & Styles
-// ----------------------------------
+* {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $color-gray-dark;
+}
+ 
+// NOTE: Fix for weird overflow issue. 
+.container {
+	.ds-l-row {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
+
+// Full-Width Section
+// ------------------
+
+.bb-full-width--gray {
+	width: 100%;
+	padding: 2rem 1rem;
+	background: #f7f7f7;
+}
+
+// Login Gradient Container Layout & Styles
+// ----------------------------------------
 // NOTE: This is used for login, signup, and forgot password screens.
 // It is global because it can also be reusable for future cases.
 
@@ -92,28 +124,4 @@ $gradient-card-border-color: #DDDDDD;
 		border-radius: .3rem;
 		font-size: .8rem;
 	}
-}
-
-// General Global Styles
-// ---------------------
-
-* {
-  margin: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: $color-gray-dark;
-}
-
-// NOTE: Fix for weird overflow issue. 
-.container {
-  .ds-l-row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
 }
