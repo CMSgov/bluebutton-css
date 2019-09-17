@@ -124,11 +124,24 @@ $banner-sandbox-gradient-accent: rgba(158,143,243, 100%);
     h1, p, a {
       margin: 1rem 0;
     }
+    .banner-back-button {
+      display: flex;
+      align-items: center;
+      color: $banner-color-primary;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .banner-back-button svg {
+      margin-right: .5rem;
+    }
+    .banner-back-button:hover {
+      text-decoration: underline;
+    }
   }
   // Color override when banner is in use for the Sandbox
   .sandbox-gradient {
     background: $banner-sandbox-solid;
-    background: linear-gradient(90deg, $banner-sandbox-gradient-solid, $banner-sandbox-gradient-accent);
+    background: linear-gradient(90deg, $banner-sandbox-gradient-solid, $banner-sandbox-gradient-accent); 
   }
 }
 

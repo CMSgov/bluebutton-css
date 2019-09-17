@@ -43,6 +43,11 @@ $bb-card-default-border: #e8e8e8;
 	}
 }
 
+.full-width-card {
+	max-width: 100%;
+	padding: 2rem 1rem;
+}
+
 // Message Card
 // ------------
 // NOTE: Meant to over-ride .ds-c-alert
@@ -205,5 +210,43 @@ $bb-c-message-card-border-color: $blue;
 		.view-edit-app-link:focus svg {
 			stroke: #000000;
 		}
+	}
+}
+
+// Application Detail - Optional Information
+// -----------------------------------------
+
+.bb-app-optional-information-card {
+	display: flex;
+	background: $white;
+	border-radius: .3rem;
+	border: 1px solid #ebebeb;
+	margin-bottom: 2rem;
+	.info-card-left {
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		border-right: 1px solid #ebebeb;
+		.app-logo {
+			width: 100px;
+			height: 100px;
+			border: 5px solid $white;
+			border-radius: 50%;
+			background-size: contain;
+			background-position: center;
+			margin-bottom: 1rem;
+		}
+		.terms-container {
+			display: flex;
+			flex-direction: column;
+		}
+		.terms-container a,
+		.terms-container p {
+			margin-bottom: .5rem;
+		}
+	}
+	.info-card-right {
+		padding: 1rem;
 	}
 }

@@ -15,9 +15,10 @@
 body {
 	margin: 0;
 	padding: 0;
+	background: $light-gray;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
 	color: $color-gray-dark;
 }
  
@@ -35,7 +36,15 @@ h1, h2, h3, h4, h5, h6 {
 .bb-full-width--gray {
 	width: 100%;
 	padding: 2rem 1rem;
-	background: #f7f7f7;
+	background: darken($light-gray, 3.5%);
+}
+
+// Raised Section
+// --------------
+// NOTE: aldkfa;dlfjka;lfjal;sdfjk;akldfj;adfjka;dkfjla;dfjal;fj
+
+.bb-raised-section {
+	margin-top: -5rem;
 }
 
 // Login Gradient Container Layout & Styles
