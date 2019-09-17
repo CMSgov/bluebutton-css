@@ -30,8 +30,8 @@ h1, h2, h3, h4, h5, h6, p {
 	}
 }
 
-// Full-Width Section
-// ------------------
+// Content Width
+// -------------
 
 .bb-full-width--gray {
 	width: 100%;
@@ -39,12 +39,22 @@ h1, h2, h3, h4, h5, h6, p {
 	background: darken($light-gray, 3.5%);
 }
 
-// Raised Section
-// --------------
-// NOTE: aldkfa;dlfjka;lfjal;sdfjk;akldfj;adfjka;dkfjla;dfjal;fj
+.bb-width--75 {
+	max-width: 75%;
+	@media #{$tablet, $phone, $small-phone} {
+		max-width: 100%;
+	}
+}
+
+.bb-width--50 {
+	max-width: 50%;
+	@media #{$tablet, $phone, $small-phone} {
+		max-width: 100%;
+	}
+}
 
 .bb-raised-section {
-	margin-top: -5rem;
+	margin-top: -7rem;
 }
 
 // Login Gradient Container Layout & Styles
