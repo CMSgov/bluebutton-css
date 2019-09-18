@@ -121,8 +121,9 @@ $banner-sandbox-gradient-accent: rgba(158,143,243, 100%);
   // Color override when banner is in use for the Sandbox
   .sandbox-solid {
     background: $banner-sandbox-solid;
-    h1, p, a {
+    h1, p, a, strong {
       margin: 1rem 0;
+      color: $banner-color-primary;
     }
     .banner-back-button {
       display: flex;
