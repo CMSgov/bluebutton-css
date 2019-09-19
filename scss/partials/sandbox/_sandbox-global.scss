@@ -21,6 +21,10 @@ body {
 h1, h2, h3, h4, h5, h6, p, strong {
 	color: $color-gray-dark;
 }
+
+h2 {
+	margin-bottom: 1rem;
+}
  
 // NOTE: Fix for weird overflow issue. 
 .container {
