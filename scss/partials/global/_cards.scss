@@ -221,12 +221,21 @@ $bb-c-message-card-border-color: $blue;
 	border-radius: .3rem;
 	border: 1px solid #ebebeb;
 	margin-bottom: 2rem;
+	@media #{$phone} {
+		flex-direction: column !important;
+	}
 	.info-card-left {
 		padding: 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		border-right: 1px solid #ebebeb;
+		@media #{$phone} {
+			align-items: center;
+			justify-content: center;
+			border-right: none;
+			border-bottom: 1px solid #ebebeb;
+		}
 		.app-logo {
 			width: 100px;
 			height: 100px;
