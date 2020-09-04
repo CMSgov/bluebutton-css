@@ -33,6 +33,6 @@
     "@cmsgov/design-system-core": "^1.31.1",
     "@cmsgov/design-system-layout": "^1.31.1",
     "gulp": "^4.0.2",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
