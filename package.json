@@ -34,6 +34,6 @@
     "ansi-regex": "^6.0.1",
     "gulp": "^4.0.2",
     "node-gyp": "^9.1.0",
-    "node-sass": "^7.0.3"
+    "node-sass": "^9.0.0"
   }
 }
