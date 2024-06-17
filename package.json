@@ -32,8 +32,8 @@
   "dependencies": {
     "@cmsgov/design-system": "^4.0.4",
     "ansi-regex": "^6.0.1",
-    "gulp": "^4.0.2",
-    "node-gyp": "^9.1.0",
-    "node-sass": "^7.0.3"
+    "gulp": "^5.0.0",
+    "node-gyp": "^10.0.0",
+    "node-sass": "^8.0.0"
   }
 }
