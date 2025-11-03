@@ -1,0 +1,67 @@
+@import 'global-variables';
+
+// Copy Button Component
+// ------------------
+
+.bb-copy-container {
+    position: relative;
+    width: 100%;
+
+    pre {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+        background-color: $light-gray;
+        border-radius: 4px;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+    }
+}
+
+.bb-copy-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid $light-gray;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: white;
+        border-color: $blue;
+    }
+
+    &:focus {
+        outline: 2px solid $blue;
+        outline-offset: 2px;
+    }
+
+    img {
+        width: 16px;
+        height: 16px;
+    }
+
+    // Hide text visually but keep for screen readers
+    span {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+
+    // Success state
+    &.copied {
+        border-color: $color-success;
+        background: rgba($color-success, 0.1);
+    }
+}
